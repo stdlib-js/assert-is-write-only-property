@@ -24,32 +24,30 @@ limitations under the License.
 
 > Test if an object's own property is [write-only][@stdlib/utils/define-write-only-accessor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-write-only-property
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isWriteOnlyProperty = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isWriteOnlyProperty;
-})();
-</script>
+var isWriteOnlyProperty = require( '@stdlib/assert-is-write-only-property' );
 ```
 
 #### isWriteOnlyProperty( value, property )
@@ -138,13 +136,8 @@ bool = isWriteOnlyProperty( obj, 'accessor' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var isWriteOnlyProperty = require( '@stdlib/assert-is-write-only-property' );
 
 var bool = isWriteOnlyProperty( 'a', 'length' );
 // returns false
@@ -172,11 +165,6 @@ bool = isWriteOnlyProperty( null, 'a' );
 
 bool = isWriteOnlyProperty( void 0, 'a' );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -265,20 +253,21 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/assert-is-write-only-property/tree/deno
 [umd-url]: https://github.com/stdlib-js/assert-is-write-only-property/tree/umd
 [esm-url]: https://github.com/stdlib-js/assert-is-write-only-property/tree/esm
+[branches-url]: https://github.com/stdlib-js/assert-is-write-only-property/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-write-only-property/main/LICENSE
 
-[@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils-define-write-only-accessor/tree/umd
+[@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils-define-write-only-accessor
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-read-only-property]: https://github.com/stdlib-js/assert-is-read-only-property/tree/umd
+[@stdlib/assert/is-read-only-property]: https://github.com/stdlib-js/assert-is-read-only-property
 
-[@stdlib/assert/is-read-write-property]: https://github.com/stdlib-js/assert-is-read-write-property/tree/umd
+[@stdlib/assert/is-read-write-property]: https://github.com/stdlib-js/assert-is-read-write-property
 
-[@stdlib/assert/is-writable-property]: https://github.com/stdlib-js/assert-is-writable-property/tree/umd
+[@stdlib/assert/is-writable-property]: https://github.com/stdlib-js/assert-is-writable-property
 
-[@stdlib/assert/is-write-only-property-in]: https://github.com/stdlib-js/assert-is-write-only-property-in/tree/umd
+[@stdlib/assert/is-write-only-property-in]: https://github.com/stdlib-js/assert-is-write-only-property-in
 
 <!-- </related-links> -->
 
