@@ -35,14 +35,30 @@ limitations under the License.
 
 > Test if an object's own property is [write-only][@stdlib/utils/define-write-only-accessor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-write-only-property
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isWriteOnlyProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@esm/index.mjs';
+var isWriteOnlyProperty = require( '@stdlib/assert-is-write-only-property' );
 ```
 
 #### isWriteOnlyProperty( value, property )
@@ -52,7 +68,7 @@ Returns a `boolean` indicating if a `value` has a [write-only][@stdlib/utils/def
 <!-- eslint-disable no-restricted-syntax -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+var defineProperty = require( '@stdlib/utils-define-property' );
 
 var obj = {
     'foo': 'bar'
@@ -101,7 +117,7 @@ bool = isWriteOnlyProperty( obj, 'accessor' );
 -   Property arguments are coerced to `strings`.
 
     ```javascript
-    import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+    var defineProperty = require( '@stdlib/utils-define-property' );
 
     var obj = {};
 
@@ -131,13 +147,8 @@ bool = isWriteOnlyProperty( obj, 'accessor' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import isWriteOnlyProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@esm/index.mjs';
+```javascript
+var isWriteOnlyProperty = require( '@stdlib/assert-is-write-only-property' );
 
 var bool = isWriteOnlyProperty( 'a', 'length' );
 // returns false
@@ -165,10 +176,6 @@ bool = isWriteOnlyProperty( null, 'a' );
 
 bool = isWriteOnlyProperty( void 0, 'a' );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -201,7 +208,7 @@ bool = isWriteOnlyProperty( void 0, 'a' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -261,17 +268,17 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-write-only-property/main/LICENSE
 
-[@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils-define-write-only-accessor/tree/esm
+[@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils-define-write-only-accessor
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-read-only-property]: https://github.com/stdlib-js/assert-is-read-only-property/tree/esm
+[@stdlib/assert/is-read-only-property]: https://github.com/stdlib-js/assert-is-read-only-property
 
-[@stdlib/assert/is-read-write-property]: https://github.com/stdlib-js/assert-is-read-write-property/tree/esm
+[@stdlib/assert/is-read-write-property]: https://github.com/stdlib-js/assert-is-read-write-property
 
-[@stdlib/assert/is-writable-property]: https://github.com/stdlib-js/assert-is-writable-property/tree/esm
+[@stdlib/assert/is-writable-property]: https://github.com/stdlib-js/assert-is-writable-property
 
-[@stdlib/assert/is-write-only-property-in]: https://github.com/stdlib-js/assert-is-write-only-property-in/tree/esm
+[@stdlib/assert/is-write-only-property-in]: https://github.com/stdlib-js/assert-is-write-only-property-in
 
 <!-- </related-links> -->
 
