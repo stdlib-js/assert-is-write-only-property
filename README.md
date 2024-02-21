@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isWriteOnlyProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@esm/index.mjs';
+import isWriteOnlyProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@v0.2.1-esm/index.mjs';
 ```
 
 #### isWriteOnlyProperty( value, property )
@@ -137,7 +137,7 @@ bool = isWriteOnlyProperty( obj, 'accessor' );
 <body>
 <script type="module">
 
-import isWriteOnlyProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@esm/index.mjs';
+import isWriteOnlyProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-write-only-property@v0.2.1-esm/index.mjs';
 
 var bool = isWriteOnlyProperty( 'a', 'length' );
 // returns false
